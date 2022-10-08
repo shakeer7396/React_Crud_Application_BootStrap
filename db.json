@@ -11,6 +11,13 @@
       "email": "shakeer043@gmail.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "name": "shaik",
+      "mobile": "456123",
+      "email": "shakir@gmail.com",
+      "password": "123455",
+      "id": 3
     }
   ],
   "comments": [
