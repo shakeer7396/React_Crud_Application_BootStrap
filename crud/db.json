@@ -1,6 +1,11 @@
 {
   "posts": [
-    
+    {
+      "name": "shaik",
+      "mobile": "123",
+      "email": "shaik",
+      "password": "1234",
+      "id": 1
+    }
   ]
-  
 }
