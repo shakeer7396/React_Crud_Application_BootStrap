@@ -23,14 +23,14 @@ const AddUser = () => {
         password:"",
 
     })
-    const [updateData,setUpdateData]=useState({
-      name:"",
-      mobile:"",
-      email:"",
-      password:"",
-      id:""
+  //   const [updateData,setUpdateData]=useState({
+  //     name:"",
+  //     mobile:"",
+  //     email:"",
+  //     password:"",
+  //     id:""
 
-  })
+  // })
 
     const handleFormSubmit=async(e)=>{
         let response=await axios.post("http://localhost:4000/posts",formData);
@@ -144,36 +144,36 @@ const AddUser = () => {
     
 
 {/* <!-- Modal --> */}
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fs-5" id="exampleModalLabel">Update User</h5>
+<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"    aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title fs-5" id="exampleModalLabel">Update User</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div className="modal-body">
       <div className="mb-3">
   <label  className="form-label">Full Name</label>
   <input type="text" className="form-control" id="exampleFormControlInput1" 
   value={updateData.name} onChange={(e)=>setUpdateData({...updateData,name:e.target.value})}
   />
-</div>
+ </div>
              
-<div className="mb-3">
-  <label  className="form-label">Mobile Number</label>
-  <input type="number" className="form-control" id="exampleFormControlInput1" value={updateData.mobile} onChange={(e)=>setUpdateData({...updateData,mobile:e.target.value})} />
-</div>
+      <div className="mb-3">
+        <label  className="form-label">Mobile Number</label>
+        <input type="number" className="form-control" id="exampleFormControlInput1" value={updateData.mobile} onChange={(e)=>setUpdateData({...updateData,mobile:e.target.value})} />
+      </div>
 
-        <div className="mb-3">
-  <label className="form-label">Email address</label>
-  <input type="email" className="form-control" id="exampleFormControlInput1" value={updateData.email} onChange={(e)=>setUpdateData({...updateData,email:e.target.value})} />
-</div>
+              <div className="mb-3">
+        <label className="form-label">Email address</label>
+        <input type="email" className="form-control" id="exampleFormControlInput1" value={updateData.email} onChange={(e)=>setUpdateData({...updateData,email:e.target.value})} />
+      </div>
 
-<div className="mb-3">
-  <label  className="form-label">Password</label>
-  <input type="password" className="form-control" id="exampleFormControlInput1" 
-  value={updateData.password} onChange={(e)=>setUpdateData({...updateData,password:e.target.value})}/>
-</div>
+      <div className="mb-3">
+        <label  className="form-label">Password</label>
+        <input type="password" className="form-control" id="exampleFormControlInput1" 
+        value={updateData.password} onChange={(e)=>setUpdateData({...updateData,password:e.target.value})}/>
+      </div>
 
 
 
