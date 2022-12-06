@@ -23,14 +23,14 @@ const AddUser = () => {
         password:"",
 
     })
-  //   const [updateData,setUpdateData]=useState({
-  //     name:"",
-  //     mobile:"",
-  //     email:"",
-  //     password:"",
-  //     id:""
+    const [updateData,setUpdateData]=useState({
+      name:"",
+      mobile:"",
+      email:"",
+      password:"",
+      id:""
 
-  // })
+  })
 
     const handleFormSubmit=async(e)=>{
         let response=await axios.post("http://localhost:4000/posts",formData);
