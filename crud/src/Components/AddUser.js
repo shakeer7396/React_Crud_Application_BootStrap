@@ -56,7 +56,7 @@ const AddUser = () => {
     .then((res)=>alert("Deleted Successfully"))
     getUser();
   }
-    
+   //update data 
   const handleUpdate =async()=>{
     await axios.put(`http://localhost:4000/posts/${updateData.id}`,updateData)
     .then((res)=>{
@@ -71,6 +71,8 @@ const AddUser = () => {
         <div className="col-md-7">
             <h1 className='text-center'>Add User Form</h1>
         </div>
+
+
 
         <div className="mb-3">
   <label  className="form-label">Full Name</label>
